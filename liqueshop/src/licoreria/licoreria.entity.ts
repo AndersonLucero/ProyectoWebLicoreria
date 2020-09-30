@@ -1,4 +1,6 @@
-import {Column, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
+
+@Entity('licoreria')
 
 export class LicoreriaEntity {
     @PrimaryGeneratedColumn({
@@ -38,7 +40,7 @@ export class LicoreriaEntity {
     })
     fotoLicoreria: string
 
-    
+
 
 
 }
