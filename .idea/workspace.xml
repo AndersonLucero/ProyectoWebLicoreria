@@ -22,10 +22,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/wb-lucero-garcia-michael-anderson" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\Users\ander\WebstormProjects\ProyectoWebLicoreria\liqueshop\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ander\WebstormProjects\ProyectoWebLicoreria\liqueshop\src\usuario" />
+      <recent name="C:\Users\ander\WebstormProjects\ProyectoWebLicoreria\liqueshop\src\receta" />
+      <recent name="C:\Users\ander\WebstormProjects\ProyectoWebLicoreria\liqueshop\src\pedido" />
+      <recent name="C:\Users\ander\WebstormProjects\ProyectoWebLicoreria\liqueshop\src\licoreria" />
+      <recent name="C:\Users\ander\WebstormProjects\ProyectoWebLicoreria\liqueshop\src\licor" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -36,7 +46,8 @@
       <option name="presentableId" value="Default" />
       <updated>1601401528853</updated>
       <workItem from="1601401532033" duration="1468000" />
-      <workItem from="1601421473897" duration="1115000" />
+      <workItem from="1601421473897" duration="1294000" />
+      <workItem from="1601422910231" duration="2462000" />
     </task>
     <task id="LOCAL-00001" summary="configuracion del Nest">
       <created>1601421648455</created>
@@ -45,7 +56,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601421648455</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="configuracion del Nest v2">
+      <created>1601422606244</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601422606244</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -53,21 +71,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="configuracion del Nest" />
-    <option name="LAST_COMMIT_MESSAGE" value="configuracion del Nest" />
+    <MESSAGE value="configuracion del Nest v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="configuracion del Nest v2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="542" y="97" key="CommitChangelistDialog2" timestamp="1601421646254">
+    <state x="542" y="97" key="CommitChangelistDialog2" timestamp="1601422604868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="542" y="97" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601421646254" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1601422268932">
+    <state x="542" y="97" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601422604868" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601424056708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601422268932" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601421784663">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601424056708" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1601422932521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601421784663" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601422932521" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601422943656">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601422943656" />
     <state x="682" y="357" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601422107708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
