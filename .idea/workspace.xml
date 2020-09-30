@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5cb0b406-c495-4be0-92a1-be735d63fbaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liqueshop/src/receta/receta.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liqueshop/src/receta/receta.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liqueshop/src/receta/receta.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liqueshop/src/receta/receta.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liqueshop/src/receta/receta.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liqueshop/src/receta/receta.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liqueshop/src/receta/receta.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liqueshop/src/receta/receta.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liqueshop/src/pedido/pedido.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liqueshop/src/pedido/pedido.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liqueshop/src/pedido/pedido.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liqueshop/src/pedido/pedido.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liqueshop/src/pedido/pedido.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liqueshop/src/pedido/pedido.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liqueshop/src/pedido/pedido.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liqueshop/src/pedido/pedido.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/wb-lucero-garcia-michael-anderson" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Users\ander\WebstormProjects\ProyectoWebLicoreria\liqueshop\node_modules\typescript\lib" />
@@ -51,7 +51,9 @@
       <updated>1601401528853</updated>
       <workItem from="1601401532033" duration="1468000" />
       <workItem from="1601421473897" duration="1294000" />
-      <workItem from="1601422910231" duration="5331000" />
+      <workItem from="1601422910231" duration="5383000" />
+      <workItem from="1601447078710" duration="599000" />
+      <workItem from="1601475999509" duration="1358000" />
     </task>
     <task id="LOCAL-00001" summary="configuracion del Nest">
       <created>1601421648455</created>
@@ -88,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601426191279</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="receta">
+      <created>1601441106265</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601441106265</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,13 +112,14 @@
     <MESSAGE value="creacion de entidades y configuracion de usuario" />
     <MESSAGE value="creacion de entidades y configuracion de usuario 2" />
     <MESSAGE value="creacion de entidades y configuracion de usuario 2.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="creacion de entidades y configuracion de usuario 2.1" />
+    <MESSAGE value="receta" />
+    <option name="LAST_COMMIT_MESSAGE" value="receta" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="542" y="97" key="CommitChangelistDialog2" timestamp="1601426190016">
+    <state x="542" y="97" key="CommitChangelistDialog2" timestamp="1601441105294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="542" y="97" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601426190016" />
+    <state x="542" y="97" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601441105294" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601424056708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -118,10 +128,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601425682588" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601426202341">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601441114925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601426202341" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601441114925" />
     <state x="682" y="357" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601422107708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
