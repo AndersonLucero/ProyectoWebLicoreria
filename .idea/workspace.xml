@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cb0b406-c495-4be0-92a1-be735d63fbaa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/liqueshop/src/licor/dto/licor.create.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liqueshop/src/licor/dto/licor.create.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liqueshop/src/licor/dto/licor.update.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liqueshop/src/licor/dto/licor.update.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liqueshop/src/cliente/dto/cliente.create.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liqueshop/src/cliente/dto/cliente.create.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liqueshop/src/cliente/dto/cliente.update.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liqueshop/src/cliente/dto/cliente.update.dto.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
       <workItem from="1601421473897" duration="1294000" />
       <workItem from="1601422910231" duration="5383000" />
       <workItem from="1601447078710" duration="599000" />
-      <workItem from="1601475999509" duration="12061000" />
+      <workItem from="1601475999509" duration="12665000" />
     </task>
     <task id="LOCAL-00001" summary="configuracion del Nest">
       <created>1601421648455</created>
