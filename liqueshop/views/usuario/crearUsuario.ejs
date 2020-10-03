@@ -1,0 +1,57 @@
+
+<%- include('../compartido/estilos-generales/estilos-generales-component') %>
+
+<html>
+<head>
+    <style>
+        .elemento{
+
+        }
+        table{
+            border-spacing: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <table>
+
+        <tr>
+            <th>
+                <form action="../usuario/crearUsuarioDesdeVista" method="POST">
+
+                    <label class="elemento" for="nombreUsuario">nombre:</label>
+                    <input class="elemento" id="nombreUsuario" type="text" name="nombreUsuario" value="<%=  nombreUsuario %>">
+                    <br>
+
+                    <label class="elemento" for="correoUsuario">correo:</label>
+                    <input class="elemento" id="correoUsuario" type="text" name="correoUsuario" value="<%= correoUsuario %>">
+                    <br>
+
+                    <label fclass="elemento" or="telefonoUsuario">telefono:</label>
+                    <input class="elemento" id="telefonoUsuario" type="text" name="telefonoUsuario" value="<%= telefonoUsuario %>">
+                    <br>
+
+                    <label class="elemento" for="passwordUsuario">contrasena:</label>
+                    <input class="elemento" id="passwordUsuario" type="password" name="passwordUsuario" value="<%= passwordUsuario %>">
+                    <br>
+
+                    <button class="elemento" type="submit">Guardar</button>
+                </form>
+            </th>
+
+        </tr>
+            <td>
+                <form action="../licor/vista/inicio">
+                    <button class="elemento" type="submit">Cancelar</button></form>
+            </td>
+        <tr>
+
+        </tr>
+
+    </table>
+</div>
+
+</body>
+</html>

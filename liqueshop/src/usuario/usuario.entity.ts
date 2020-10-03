@@ -1,4 +1,5 @@
-import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, OneToMany, PrimaryGeneratedColumn} from "typeorm";
+import {PedidoEntity} from "../pedido/pedido.entity";
 
 @Entity('usuario')
 
@@ -32,5 +33,21 @@ export class UsuarioEntity{
         nullable: true
     })
     telefonoUsuario?: string
+
+
+    @Column({
+        name: 'passwordUsuario',
+        type: 'varchar',
+        length: '50',
+        nullable: true
+    })
+    passwordUsuario?: string
+
+
+    @OneToMany(
+        type => PedidoEntity,
+        pedido=>pedido.usuario
+    )
+    pedidos:PedidoEntity[]
 
 }

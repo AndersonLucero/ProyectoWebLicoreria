@@ -1,4 +1,6 @@
-import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn} from "typeorm";
+import {PedidoEntity} from "../pedido/pedido.entity";
+import {DetallepedidoEntity} from "../detallePedido/detallepedido.entity";
 
 @Entity('licor')
 
@@ -17,18 +19,41 @@ export class LicorEntity{
     nombreLicor: string
 
     @Column({
-        name: 'detallesLicor',
+        name: 'detalleLicor',
         type: 'varchar',
         length: '100',
         nullable: false
     })
-    detallesLicor: string
+    detalleLicor: string
+
+
+    @Column({
+        name: 'enlaceLicor',
+        type: 'varchar',
+        length: '200',
+        nullable: false
+    })
+    enlaceLicor: string
 
     @Column({
         name: 'cantidadLicor',
-        type: 'varchar',
+        type: 'int',
         nullable: false
     })
     cantidadLicor: number
+
+    @Column({
+        name: 'precioLicor',
+        type: 'float',
+        nullable: false
+    })
+    precioLicor: number
+
+    @OneToMany(
+        type => DetallepedidoEntity,
+        detallepedido=>detallepedido.licor
+    )
+    detallepedido:DetallepedidoEntity[]
+
 
 }

@@ -13,7 +13,6 @@ export class UsuarioCreateDto{
 
     @IsNotEmpty()
     @IsString()
-    @IsAlpha()
     @MaxLength(50)
     correoUsuario: string;
 
@@ -22,6 +21,12 @@ export class UsuarioCreateDto{
     @IsAlphanumeric()
     @MaxLength(50)
     telefonoUsuario?: string;
+
+    @IsNotEmpty()
+    @IsString()
+    @IsAlphanumeric()
+    @MaxLength(50)
+    passwordUsuario?: string;
 
 
 }

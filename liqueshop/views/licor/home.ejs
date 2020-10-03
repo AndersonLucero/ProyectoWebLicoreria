@@ -1,0 +1,118 @@
+
+<%- include('../compartido/estilos-generales/estilos-generales-component') %>
+
+
+<!doctype html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<table>
+
+    <tr>
+        <th>
+            <div>
+                <img src="https://i.pinimg.com/originals/78/da/41/78da41cf22403ecc8008ae56e1978408.png" alt="logo empresa">
+            </div>
+        </th>
+    </tr>
+
+    <tr>
+        <th>
+            <div class="menucontent">
+
+                <% let logeado = typeof usuario !== 'undefined' %>
+                <%if(logeado){%>
+                    <%- include('../compartido/menu/menu-component-logout') %>
+                <%} else {%>
+                    <%- include('../compartido/menu/menu-component') %>
+                <%}%>
+            </div>
+            <div>
+
+                <form class="barrabuscar" action="/licor/vista/inicio"
+                      method="get">
+                    <label class="textobuscar" for="busqueda" >Buscar: </label>
+                    <input id="busqueda" type="text" name="busqueda">
+                    <button type="submit">Buscar</button>
+                </form>
+
+            </div>
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+            <div class = "container">
+
+                <% arregloLicores.forEach( (objeto)=>{ %>
+                    <div class = "card">
+
+                        <table>
+                            <tr>
+                                <th>
+                                    <div class="image">
+                                        <img src=<%= objeto.enlaceLicor%> alt=""  width="220" height="250">
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="texto">
+                                        <h1><%= objeto.nombreLicor%></h1>
+                                    </div>
+                                </th>
+                            </tr>
+                        </table>
+
+                        <div class="content">
+                            <p>$ <%= objeto.precioLicor%></p>
+                            <p><%= objeto.detalleLicor%></p>
+
+                            <% logeado = typeof usuario !== 'undefined' %>
+                            <%if(logeado){%>
+                                <form action="../../detallepedido/agregarProducto"
+                                      method="post">
+
+                                    <table>
+                                        <tr>
+                                            <th>
+                                                <label for="cantidad">Cantidad: </label>
+                                            </th>
+                                            <th>
+                                                <input class="ingresocantidad" id="cantidad" min = "0" type="number" name="cantidad" >
+                                            </th>
+                                            <th>
+                                                <input type = "hidden" name = "idLicor" value = "<%= objeto.idlicor%>">
+                                                <button type="submit">Agregar al carrito</button>
+                                            </th>
+                                        </tr>
+                                    </table>
+
+                                </form>
+                            <%} else {%>
+                                <%- include('../compartido/logueo/nologueado') %>
+                            <%}%>
+                        </div>
+                    </div>
+                <% } ) %>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

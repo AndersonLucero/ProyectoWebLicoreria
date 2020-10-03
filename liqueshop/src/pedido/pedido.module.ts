@@ -3,10 +3,13 @@ import {PedidoService} from "./pedido.service";
 import {PedidoController} from "./pedido.controller";
 import {PedidoEntity} from "./pedido.entity";
 import {TypeOrmModule} from "@nestjs/typeorm";
+import {UsuarioModule} from "../usuario/usuario.module";
+import {DetallepedidoModule} from "../detallePedido/detallepedido.module";
 
 
 @Module({
     imports: [
+        DetallepedidoModule,
         TypeOrmModule.forFeature(
             [
                 PedidoEntity

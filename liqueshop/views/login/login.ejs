@@ -1,0 +1,75 @@
+<%- include('../compartido/estilos-generales/estilos-generales-component') %>
+
+<style>
+    .contenedor
+    {
+        height:100px;
+        line-height:40px;
+        border:1px solid;
+        text-align:left;
+        background: #f8faf9;
+    }
+
+    .usuariolabel{
+        margin-left: 37px;
+    }
+
+    .passlabel{
+        margin-left: 10px;
+    }
+
+    .botonregistrar{
+        margin-top: -10px;
+    }
+
+</style>
+
+<div class = "container">
+    <div class = "card">
+
+        <table>
+            <tr>
+                <th>
+                    <div class="image">
+                        <img src="https://cdn.discordapp.com/attachments/735270288803102823/761812820735164436/logoliqueshop2.png" alt="" width="230" height="250">
+                    </div>
+                </th>
+
+                <th>
+                    <div class="texto">
+                        <h1>Iniciar sesion</h1>
+                    </div>
+                </th>
+            </tr>
+        </table>
+
+        <div class="content">
+
+            <p>Bienvenido</p>
+            <form action="/usuario/login" method="post">
+                <div class="contenedor">
+
+                    <div>
+                        <label class="usuariolabel" for="userID">Usuario: </label>
+                        <input type="text"
+                               id="userID"
+                               name="usuario">
+                    </div>
+                    <div>
+                        <label class="passlabel" for="passwordID">Contraseña: </label>
+                        <input type="password"
+                               id="PaswordID"
+                               name="password">
+                        <button type="submit">Ingresar</button>
+                    </div>
+
+                </div>
+            </form>
+            <div>
+                <a href="../../usuario/crearUsuario" >
+                    <button class="botonregistrar">Registrarse</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

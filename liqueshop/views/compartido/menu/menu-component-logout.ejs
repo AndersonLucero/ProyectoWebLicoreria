@@ -1,0 +1,66 @@
+
+<!-- unordered list-->
+
+
+<style>
+    .contenedormenu{
+        position: relative;
+        width: 1100px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        background: aliceblue;
+    }
+
+    .botones{
+        position: relative;
+        margin-inside: 10px;
+        width: 250px;
+        height: 30px;
+        font-size: 15px;
+        box-shadow: 0 10px 202px rgb(3, 3, 3);
+    }
+
+    .botones1{
+        position: relative;
+        margin-top: 16px;
+        width: 300px;
+        height: 30px;
+        font-size: 15px;
+        box-shadow: 0 10px 202px rgb(3, 3, 3);
+    }
+
+</style>
+
+
+<div class="contenedormenu">
+        <table>
+            <tr>
+                <th>
+                    <a href ="../../licor/vista/inicio" >
+                        <button class="botones">inicio</button>
+                    </a>
+
+                </th>
+                <th>
+                    <a href="../../pedido/vista/pedido" >
+                        <button class="botones">ver carrito</button>
+                    </a>
+                </th>
+                <th>
+                    <a href="../../pedido/verPedidos" >
+                        <button class="botones">ver pedidos</button>
+                    </a>
+                </th>
+                <th>
+                    <form action="../../usuario/logout" method="post">
+                        <button class="botones1">logout</button>
+                    </form>
+                </th>
+
+            </tr>
+        </table>
+</div>

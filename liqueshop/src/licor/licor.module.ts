@@ -5,7 +5,9 @@ import {LicorEntity} from "./licor.entity";
 import {LicorService} from "./licor.service";
 
 @Module({
+    exports:[LicorService],
     imports: [
+
         TypeOrmModule.forFeature(
             [
                 LicorEntity

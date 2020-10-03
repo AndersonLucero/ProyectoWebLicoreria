@@ -1,6 +1,10 @@
 import {InjectRepository} from "@nestjs/typeorm";
-import {Repository} from "typeorm";
+import {FindManyOptions, Like, Repository} from "typeorm";
 import {PedidoEntity} from "./pedido.entity";
+import {Injectable} from "@nestjs/common";
+import {LicorEntity} from "../licor/licor.entity";
+
+@Injectable()
 
 export class PedidoService{
     constructor(
@@ -9,13 +13,30 @@ export class PedidoService{
     ) {
     }
 
-    crearPedido(usuario: PedidoEntity){
-
+    crearPedido(pedido: PedidoEntity){
+        return this.repositorio.save(pedido)
     }
 
+    buscarPedido(textoConsulta: String){
 
-    editarPedido(pedido: PedidoEntity){
-
+        if (textoConsulta !== undefined) {
+            const consulta: FindManyOptions<PedidoEntity> = {
+                where: [
+                    {
+                        nombreLicor: Like(`%${textoConsulta}%`)
+                    },
+                    {
+                        detalleLicor: Like(`%${textoConsulta}%`)
+                    },
+                    {
+                        precioLicor: Like(`%${textoConsulta}%`)
+                    }
+                ]
+            }
+            return this.repositorio.find(consulta);
+        } else{
+            return this.repositorio.find();
+        }
     }
 
     eliminarPedido(id: number){

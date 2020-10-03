@@ -1,4 +1,6 @@
-import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn} from "typeorm";
+import {UsuarioEntity} from "../usuario/usuario.entity";
+import {DetallepedidoEntity} from "../detallePedido/detallepedido.entity";
 
 @Entity('pedido')
 
@@ -16,11 +18,31 @@ export class PedidoEntity{
     fechaPedido: string;
 
     @Column({
-        name: 'detallePedido',
+        name: 'observacionPedido',
         type: 'varchar',
         length: '50',
+        nullable: true
+    })
+    observacionPedido?: string;
+
+    @Column({
+        name: 'precioTotal',
+        type: 'float',
         nullable: false
     })
-    detallePedido: string;
+    precioTotal: number;
+
+    @ManyToOne(
+        type => UsuarioEntity,
+        usuario=> usuario.pedidos
+    )
+    @JoinColumn({name: 'idUsuario'})
+    usuario: UsuarioEntity
+
+    @OneToMany(
+        type => DetallepedidoEntity,
+        detallepedido=>detallepedido.pedido
+    )
+    detallepedido:DetallepedidoEntity[]
 
 }

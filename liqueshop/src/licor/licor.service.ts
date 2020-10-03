@@ -1,6 +1,9 @@
 import {InjectRepository} from "@nestjs/typeorm";
-import {Repository} from "typeorm";
+import {FindManyOptions, Like, Repository} from "typeorm";
 import {LicorEntity} from "./licor.entity";
+import {Injectable} from "@nestjs/common";
+
+@Injectable()
 
 export class LicorService{
     constructor(
@@ -9,16 +12,37 @@ export class LicorService{
     ) {
     }
 
-    crearUsuario(usuario: LicorEntity){
+
+    editarLicor(licor: LicorEntity){
 
     }
 
-
-    editarUsuario(usuario: LicorEntity){
+    eliminarLicor(id: number){
 
     }
 
-    eliminarUsuario(id: number){
+    buscarUnLicor(id: number){
+        return this.repositorio.findOne(id)
+    }
 
+    buscarTodosLicores(textoConsulta?: String){
+        if (textoConsulta !== undefined) {
+            const consulta: FindManyOptions<LicorEntity> = {
+                where: [
+                    {
+                        nombreLicor: Like(`%${textoConsulta}%`)
+                    },
+                    {
+                        detalleLicor: Like(`%${textoConsulta}%`)
+                    },
+                    {
+                        precioLicor: Like(`%${textoConsulta}%`)
+                    }
+                ]
+            }
+            return this.repositorio.find(consulta);
+        } else{
+            return this.repositorio.find();
+        }
     }
 }
